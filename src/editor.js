@@ -579,6 +579,9 @@ function createHTML(options = {}) {
                     // insert text manually
                     exec("insertText", text);
                 }
+
+                Actions.UPDATE_HEIGHT();
+                Actions.UPDATE_OFFSET_Y();
             });
             addEventListener(content, 'compositionstart', function(event){
                 compositionStatus = 1;
